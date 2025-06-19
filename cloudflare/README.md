@@ -17,7 +17,7 @@ Also add a file at `non/non-router/wrangler.local.json`
 }
 ```
 
-Run it using:
+Run it using (this merges wrangler.jsonc with wrangler.local.json):
 ```
-wrangler deploy --config wrangler.local.json
+wrangler deploy
 ```
