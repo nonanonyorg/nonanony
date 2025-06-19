@@ -1,0 +1,16 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "nony-router",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-06-19",
+  "routes": ["nony.io/*"],
+  "r2_buckets": [
+    {
+      "binding": "STATIC_PAGES",
+      "bucket_name": "nony-pages"
+    }
+  ],
+  "observability": {
+    "enabled": true
+  }
+}

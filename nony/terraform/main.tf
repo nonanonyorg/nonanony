@@ -7,16 +7,12 @@ terraform {
   }
 }
 
-provider "cloudflare" {
-  api_token = var.cloudflare_api_token
-}
+provider "cloudflare" {}
 
-variable "cloudflare_api_token" {}
 variable "account_id" {}
-variable "r2_bucket_name" {}
 
 resource "cloudflare_r2_bucket" "pages" {
   account_id = var.account_id
-  name       = var.r2_bucket_name
-  location   = "AUTO"
+  name       = "nony-pages"
+  location   = "WNAM"
 }
