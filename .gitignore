@@ -94,3 +94,6 @@ build/
 tmp/
 .cache/
 .envrc
+
+# Other
+brainstorming/
